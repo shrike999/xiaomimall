@@ -1,0 +1,60 @@
+.carousel {
+    position: relative;
+}
+
+.slide {
+    inset: 0;
+    opacity: 0;
+    z-index: 0;
+    position: absolute;
+    top: -460px;
+}
+
+.slide[data-active] {
+    opacity: 1;
+}
+
+.slide>img {
+    display: block;
+    width: 1226px;
+    height: 460px;
+}
+
+.carousel-box {
+    position: absolute;
+}
+
+.carousel>ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.carousel-button {
+    position: absolute;
+    left: 700px;
+    z-index: 3;
+    background: none;
+    border: none;
+    font-size: 5rem;
+    transform: translateY(-270px);
+    color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+    margin: 0px;
+}
+
+.carousel-button:hover {
+    /* background-color: rgba(0, 0, 0, .2); */
+    color: rgba(255, 255, 255, .8);
+}
+
+
+.carousel-button.prev {
+    left: 236px;
+}
+
+.carousel-button.next {
+    padding-right: 5px;
+    width: 27px;
+    left: 1189px;
+}
